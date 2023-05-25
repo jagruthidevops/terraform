@@ -1,10 +1,10 @@
 resource "aws_instance" "web" {
-  ami           = "ami-0763cf792771fe1bd"
+  ami           = "ami-05a36e1502605b4aa"
   instance_type = "t2.micro"
-  key_name      = "jagruthi"
-  subnet_id     = "subnet-005271450b9ce5a71"
+  key_name      = "centos_aws"
+  subnet_id     = "subnet-0dec0c01e1786c695"
   tags = {
-    Name = "demo_test_new"
+    Name = "demo_test"
 }
 
 root_block_device {
